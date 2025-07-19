@@ -86,6 +86,9 @@ body > *:not(.video-bg) {
     padding: 0.5rem 1.1rem;
     border-radius: 6px;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    pointer-events: auto !important;
+    z-index: 9999 !important;
+    position: relative;
 }
 .nav-links li a.active, .nav-links li a:hover {
     background: #2196f3;
@@ -655,10 +658,14 @@ body > *:not(.video-bg) {
         box-shadow: 0 8px 24px #2196f3aa;
         border-radius: 0 0 0 16px;
         padding: 1.2rem 0.5rem;
-        z-index: 110;
+        z-index: 99999;
     }
     .menu-toggle:checked ~ .nav-links {
         display: flex;
+        z-index: 99999;
+    }
+    .menu-toggle:checked + .premium-hamburger {
+        z-index: 100;
     }
 }
 @media (max-width: 700px) {

@@ -1,4 +1,4 @@
-procee<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,22 +8,24 @@ procee<!DOCTYPE html>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="video-bg">
+        <video autoplay muted loop playsinline poster="fallback.jpg" id="bgVideo">
+            <source src="https://www.coverr.co/s3/mp4/coverr-car-wash-1579864570.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
     <header>
-        <nav class="navbar">
-            <div class="logo"><a href="index.html">MotoGear (UV Wash)</a></div>
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle" class="hamburger"><span></span></label>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bike-services.html">Bike Services</a></li>
-                <li><a href="car-services.html">Car Services</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="admin.html">Admin</a></li>
+        <nav class="navbar premium-navbar">
+            <div class="logo"><i class="fas fa-gem"></i> <span>MotoGear <span class="uv-wash">(UV Wash)</span></span></div><input type="checkbox" id="menu-toggle" class="menu-toggle" /><label for="menu-toggle" class="hamburger premium-hamburger" aria-label="Open menu"><span></span><span></span><span></span></label><ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="bike-services.html"><i class="fas fa-motorcycle"></i> Bike</a></li>
+                <li><a href="car-services.html"><i class="fas fa-car"></i> Car</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="admin.html"><i class="fas fa-user-shield"></i> Admin</a></li>
             </ul>
         </nav>
     </header>
@@ -44,6 +46,28 @@ procee<!DOCTYPE html>
             </div>
         </section>
     </main>
+    <footer class="premium-footer">
+        <div class="footer-content">
+            <div class="footer-logo"><i class="fas fa-gem"></i> MotoGear <span class="uv-wash">(UV Wash)</span></div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="bike-services.html">Bike</a>
+                <a href="car-services.html">Car</a>
+                <a href="contact.html">Contact</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            <div class="footer-contact">
+                <span><i class="fas fa-phone"></i> +91-9876543210</span>
+                <span><i class="fas fa-envelope"></i> info@motogear.com</span>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2024 MotoGear (UV Wash). All rights reserved.</div>
+    </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();
     document.getElementById('contact-form').addEventListener('submit', function(e) {

@@ -12,12 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="video-bg">
-        <video autoplay muted loop playsinline poster="fallback.jpg" id="bgVideo">
-            <source src="https://www.coverr.co/s3/mp4/coverr-car-wash-1579864570.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
-    </div>
+   
     <header>
         <nav class="navbar premium-navbar">
             <div class="logo"><i class="fas fa-gem"></i> <span>MotoGear <span class="uv-wash">(UV Wash)</span></span></div>
@@ -74,5 +69,19 @@
         </div>
         <div class="footer-bottom">&copy; 2024 MotoGear (UV Wash). All rights reserved.</div>
     </footer>
+<script>
+// Close hamburger menu on nav link click (for mobile UX)
+document.addEventListener('DOMContentLoaded', function() {
+  var navLinks = document.querySelectorAll('.nav-links a');
+  var menuToggle = document.getElementById('menu-toggle');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      if (menuToggle && menuToggle.checked) {
+        menuToggle.checked = false;
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
