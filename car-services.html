@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGear (UV Wash) - Car Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">MotoGear (UV Wash)</a></div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger"><span></span></label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bike-services.html">Bike Services</a></li>
+                <li><a href="car-services.html" class="active">Car Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services-section" data-aos="fade-up">
+            <h1>Car Services</h1>
+            <div id="category-view">
+                <div class="services-grid">
+                    <div class="service-card category-card" data-category="internal">
+                        <h3><i class="fas fa-car-seat"></i> Internal Services</h3>
+                        <p>All internal cleaning and comfort services for your car.</p>
+                    </div>
+                    <div class="service-card category-card" data-category="external">
+                        <h3><i class="fas fa-car-side"></i> External Services</h3>
+                        <p>External maintenance and grooming for your car.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="internal-services-view" style="display:none;">
+                <button class="back-btn" id="back-to-categories-1">&larr; Back</button>
+                <h2>Internal Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="Cleaning">
+                        <h3>Cleaning</h3>
+                        <p>Comprehensive interior cleaning for a fresh cabin.</p>
+                        <div class="service-meta">
+                            <span>₹600</span> | <span>45 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Cleaning">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Leather Seats">
+                        <h3>Leather Seats</h3>
+                        <p>Leather seat cleaning and conditioning for luxury feel.</p>
+                        <div class="service-meta">
+                            <span>₹800</span> | <span>50 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Leather Seats">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Lighting">
+                        <h3>Lighting</h3>
+                        <p>Interior and exterior lighting check and replacement.</p>
+                        <div class="service-meta">
+                            <span>₹300</span> | <span>20 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Lighting">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Others (Internal)">
+                        <h3>Others</h3>
+                        <p>Other internal services as required.</p>
+                        <div class="service-meta">
+                            <span>₹200+</span> | <span>Varies</span>
+                        </div>
+                        <button class="book-btn" data-service="Others (Internal)">🔧 Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="external-services-view" style="display:none;">
+                <button class="back-btn" id="back-to-categories-2">&larr; Back</button>
+                <h2>External Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="Oil Change">
+                        <h3>Oil Change</h3>
+                        <p>Engine oil change for smooth and efficient performance.</p>
+                        <div class="service-meta">
+                            <span>₹700</span> | <span>35 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Oil Change">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Engine Grooming">
+                        <h3>Engine Grooming</h3>
+                        <p>Detailed engine cleaning and grooming service.</p>
+                        <div class="service-meta">
+                            <span>₹900</span> | <span>60 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Engine Grooming">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Garage">
+                        <h3>Garage</h3>
+                        <p>General garage services for all car needs.</p>
+                        <div class="service-meta">
+                            <span>₹500+</span> | <span>Varies</span>
+                        </div>
+                        <button class="book-btn" data-service="Garage">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Others (External)">
+                        <h3>Others</h3>
+                        <p>Other external services as required.</p>
+                        <div class="service-meta">
+                            <span>₹300+</span> | <span>Varies</span>
+                        </div>
+                        <button class="book-btn" data-service="Others (External)">🔧 Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="booking-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <form id="booking-form">
+                    <h2>Book Service</h2>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="vehicle">Vehicle Type</label>
+                    <input type="text" id="vehicle" name="vehicle" value="Car" readonly>
+                    <label for="service">Service</label>
+                    <input type="text" id="service" name="service" readonly>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="contact">Contact</label>
+                    <input type="tel" id="contact" name="contact" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="modal.js"></script>
+    <script src="booking.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script>
+    // Category switching logic
+    document.addEventListener('DOMContentLoaded', function () {
+        const categoryCards = document.querySelectorAll('.category-card');
+        const categoryView = document.getElementById('category-view');
+        const internalView = document.getElementById('internal-services-view');
+        const externalView = document.getElementById('external-services-view');
+        const back1 = document.getElementById('back-to-categories-1');
+        const back2 = document.getElementById('back-to-categories-2');
+
+        categoryCards.forEach(card => {
+            card.addEventListener('click', function () {
+                if (card.dataset.category === 'internal') {
+                    categoryView.style.display = 'none';
+                    internalView.style.display = 'block';
+                } else if (card.dataset.category === 'external') {
+                    categoryView.style.display = 'none';
+                    externalView.style.display = 'block';
+                }
+            });
+        });
+        back1.addEventListener('click', function () {
+            internalView.style.display = 'none';
+            categoryView.style.display = 'block';
+        });
+        back2.addEventListener('click', function () {
+            externalView.style.display = 'none';
+            categoryView.style.display = 'block';
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGear (UV Wash) - Bike Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">MotoGear (UV Wash)</a></div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger"><span></span></label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bike-services.html" class="active">Bike Services</a></li>
+                <li><a href="car-services.html">Car Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services-section" data-aos="fade-up">
+            <h1>Bike Services</h1>
+            <div id="category-view">
+                <div class="services-grid">
+                    <div class="service-card category-card" data-category="engine">
+                        <h3><i class="fas fa-cogs"></i> Engine Service</h3>
+                        <p>All engine-related services for your bike.</p>
+                    </div>
+                    <div class="service-card category-card" data-category="topup">
+                        <h3><i class="fas fa-tools"></i> Top-Up Service</h3>
+                        <p>Top-up and quick-fix services for your bike.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="engine-services-view" style="display:none;">
+                <button class="back-btn" id="back-to-categories-1">&larr; Back</button>
+                <h2>Engine Service</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="Engine Oil">
+                        <h3>Engine Oil</h3>
+                        <p>Premium engine oil replacement for smooth performance.</p>
+                        <div class="service-meta">
+                            <span>₹350</span> | <span>30 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Engine Oil">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Gearbox">
+                        <h3>Gearbox</h3>
+                        <p>Gearbox inspection and lubrication for optimal shifting.</p>
+                        <div class="service-meta">
+                            <span>₹250</span> | <span>25 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Gearbox">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Engine Bearing">
+                        <h3>Engine Bearing</h3>
+                        <p>Engine bearing check and replacement for longevity.</p>
+                        <div class="service-meta">
+                            <span>₹400</span> | <span>40 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Engine Bearing">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Lighting">
+                        <h3>Lighting</h3>
+                        <p>Headlight, tail light, and indicator check/replacement.</p>
+                        <div class="service-meta">
+                            <span>₹150</span> | <span>15 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Lighting">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Others (Engine)">
+                        <h3>Others</h3>
+                        <p>Miscellaneous engine-related services as needed.</p>
+                        <div class="service-meta">
+                            <span>₹200+</span> | <span>Varies</span>
+                        </div>
+                        <button class="book-btn" data-service="Others (Engine)">🔧 Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div id="topup-services-view" style="display:none;">
+                <button class="back-btn" id="back-to-categories-2">&larr; Back</button>
+                <h2>Top-Up Service</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="Lights">
+                        <h3>Lights</h3>
+                        <p>Replacement and top-up of all bike lights.</p>
+                        <div class="service-meta">
+                            <span>₹120</span> | <span>10 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Lights">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Cable">
+                        <h3>Cable</h3>
+                        <p>Brake, clutch, and throttle cable top-up/replacement.</p>
+                        <div class="service-meta">
+                            <span>₹100</span> | <span>15 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Cable">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Stickers">
+                        <h3>Stickers</h3>
+                        <p>Application of new stickers and graphics.</p>
+                        <div class="service-meta">
+                            <span>₹80</span> | <span>10 min</span>
+                        </div>
+                        <button class="book-btn" data-service="Stickers">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="External Body Change">
+                        <h3>External Body Change</h3>
+                        <p>Replacement of external body parts and panels.</p>
+                        <div class="service-meta">
+                            <span>₹500+</span> | <span>Varies</span>
+                        </div>
+                        <button class="book-btn" data-service="External Body Change">🔧 Book Now</button>
+                    </div>
+                    <div class="service-card" data-service="Others (Top-Up)">
+                        <h3>Others</h3>
+                        <p>Other top-up services as required.</p>
+                        <div class="service-meta">
+                            <span>₹100+</span> | <span>Varies</span>
+                        </div>
+                        <button class="book-btn" data-service="Others (Top-Up)">🔧 Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="booking-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <form id="booking-form">
+                    <h2>Book Service</h2>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="vehicle">Vehicle Type</label>
+                    <input type="text" id="vehicle" name="vehicle" value="Bike" readonly>
+                    <label for="service">Service</label>
+                    <input type="text" id="service" name="service" readonly>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="contact">Contact</label>
+                    <input type="tel" id="contact" name="contact" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="modal.js"></script>
+    <script src="booking.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script>
+    // Category switching logic
+    document.addEventListener('DOMContentLoaded', function () {
+        const categoryCards = document.querySelectorAll('.category-card');
+        const categoryView = document.getElementById('category-view');
+        const engineView = document.getElementById('engine-services-view');
+        const topupView = document.getElementById('topup-services-view');
+        const back1 = document.getElementById('back-to-categories-1');
+        const back2 = document.getElementById('back-to-categories-2');
+
+        categoryCards.forEach(card => {
+            card.addEventListener('click', function () {
+                if (card.dataset.category === 'engine') {
+                    categoryView.style.display = 'none';
+                    engineView.style.display = 'block';
+                } else if (card.dataset.category === 'topup') {
+                    categoryView.style.display = 'none';
+                    topupView.style.display = 'block';
+                }
+            });
+        });
+        back1.addEventListener('click', function () {
+            engineView.style.display = 'none';
+            categoryView.style.display = 'block';
+        });
+        back2.addEventListener('click', function () {
+            topupView.style.display = 'none';
+            categoryView.style.display = 'block';
+        });
+    });
+    </script>
+</body>
+</html>

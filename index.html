@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoGear (UV Wash)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="video-bg">
+        <video autoplay muted loop playsinline poster="fallback.jpg" id="bgVideo">
+            <source src="https://www.coverr.co/s3/mp4/coverr-car-wash-1579864570.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    <header>
+        <nav class="navbar premium-navbar">
+            <div class="logo"><i class="fas fa-gem"></i> <span>MotoGear <span class="uv-wash">(UV Wash)</span></span></div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger premium-hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="bike-services.html"><i class="fas fa-motorcycle"></i> Bike</a></li>
+                <li><a href="car-services.html"><i class="fas fa-car"></i> Car</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="admin.html"><i class="fas fa-user-shield"></i> Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home-hero premium-hero">
+            <h1>Welcome to <span class="brand-highlight">MotoGear</span> <span class="uv-wash">(UV Wash)</span></h1>
+            <p class="subtitle">Professional, premium vehicle care for your bike and car.</p>
+            <div class="home-cards premium-cards">
+                <a href="bike-services.html" class="home-card premium-card">
+                    <i class="fas fa-motorcycle fa-3x"></i>
+                    <h2>Bike Services</h2>
+                </a>
+                <a href="car-services.html" class="home-card premium-card">
+                    <i class="fas fa-car fa-3x"></i>
+                    <h2>Car Services</h2>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="premium-footer">
+        <div class="footer-content">
+            <div class="footer-logo"><i class="fas fa-gem"></i> MotoGear <span class="uv-wash">(UV Wash)</span></div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="bike-services.html">Bike</a>
+                <a href="car-services.html">Car</a>
+                <a href="contact.html">Contact</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            <div class="footer-contact">
+                <span><i class="fas fa-phone"></i> +91-9876543210</span>
+                <span><i class="fas fa-envelope"></i> info@motogear.com</span>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2024 MotoGear (UV Wash). All rights reserved.</div>
+    </footer>
+</body>
+</html>
