@@ -22,6 +22,7 @@
                 <span></span>
                 <span></span>
             </label>
+            <div class="menu-overlay"></div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="bike-services.html"><i class="fas fa-motorcycle"></i> Bike</a></li>
@@ -33,19 +34,68 @@
     </header>
     <main>
         <section class="home-hero premium-hero">
-            <h1>Welcome to <span class="brand-highlight">MotoGear</span> <span class="uv-wash">(UV Wash)</span></h1>
-            <p class="subtitle">Professional, premium vehicle care for your bike and car.</p>
-            <div class="home-cards premium-cards">
-                <a href="bike-services.html" class="home-card premium-card">
-                    <i class="fas fa-motorcycle fa-3x"></i>
-                    <h2>Bike Services</h2>
-                </a>
-                <a href="car-services.html" class="home-card premium-card">
-                    <i class="fas fa-car fa-3x"></i>
-                    <h2>Car Services</h2>
-                </a>
+            <div class="hero-content-wrapper">
+                <h1>Welcome to <span class="brand-highlight">MotoGear</span> <span class="uv-wash">(UV Wash)</span></h1>
+                <p class="subtitle">Professional, premium vehicle care for your bike and car.<br>Experience the future of auto detailing and service.</p>
+                <a href="#features" class="cta-btn">Why Choose Us</a>
+                <div class="home-cards premium-cards">
+                    <a href="bike-services.html" class="home-card premium-card">
+                        <i class="fas fa-motorcycle fa-3x"></i>
+                        <h2>Bike Services</h2>
+                    </a>
+                    <a href="car-services.html" class="home-card premium-card">
+                        <i class="fas fa-car fa-3x"></i>
+                        <h2>Car Services</h2>
+                    </a>
+                </div>
             </div>
         </section>
+
+        <!-- Why Choose Us / Features -->
+        <section id="features" class="features-section" data-aos="fade-up">
+            <h2>Why Choose MotoGear?</h2>
+            <div class="features-grid">
+                <div class="feature-card"><i class="fas fa-bolt"></i><h3>Fast &amp; Reliable</h3><p>Quick turnaround and dependable service every time.</p></div>
+                <div class="feature-card"><i class="fas fa-shield-alt"></i><h3>Trusted Professionals</h3><p>Certified, experienced staff for your peace of mind.</p></div>
+                <div class="feature-card"><i class="fas fa-sparkles"></i><h3>Premium Quality</h3><p>We use only the best products and latest technology.</p></div>
+                <div class="feature-card"><i class="fas fa-thumbs-up"></i><h3>Customer Satisfaction</h3><p>Our customers love us—see our reviews below!</p></div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works-section" data-aos="fade-up">
+            <h2>How It Works</h2>
+            <div class="how-steps">
+                <div class="how-step"><span class="step-num">1</span><h3>Choose Service</h3><p>Select your bike or car service.</p></div>
+                <div class="how-step"><span class="step-num">2</span><h3>Book Online</h3><p>Pick a date and time that suits you.</p></div>
+                <div class="how-step"><span class="step-num">3</span><h3>We Service</h3><p>Our experts handle your vehicle with care.</p></div>
+                <div class="how-step"><span class="step-num">4</span><h3>Enjoy the Shine!</h3><p>Drive away happy with a sparkling clean ride.</p></div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section" data-aos="fade-up">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>“Absolutely the best wash and service my car has ever had. Fast, friendly, and professional!”</p>
+                    <div class="testimonial-user"><i class="fas fa-user-circle"></i> <span>Ravi K.</span></div>
+                </div>
+                <div class="testimonial-card">
+                    <p>“MotoGear’s bike detailing is next level. My bike looks brand new every time!”</p>
+                    <div class="testimonial-user"><i class="fas fa-user-circle"></i> <span>Priya S.</span></div>
+                </div>
+                <div class="testimonial-card">
+                    <p>“Easy online booking and great results. Highly recommend to all car owners.”</p>
+                    <div class="testimonial-user"><i class="fas fa-user-circle"></i> <span>Arjun M.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <!-- Scroll to Top Button -->
+        <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     </main>
     <footer class="premium-footer">
         <div class="footer-content">
@@ -81,6 +131,19 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Scroll to top button
+  var scrollBtn = document.getElementById('scrollTopBtn');
+  window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = 'block';
+    } else {
+      scrollBtn.style.display = 'none';
+    }
+  };
+  scrollBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 });
 </script>
 </body>

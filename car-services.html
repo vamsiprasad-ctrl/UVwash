@@ -26,25 +26,40 @@
         </nav>
     </header>
     <main>
-        <section class="services-section" data-aos="fade-up">
-            <h1>Car Services</h1>
+        <!-- Hero Banner with premium car image, cards, and homepage structure -->
+        <section class="home-hero premium-hero car-hero" data-aos="fade-down">
+            <div class="hero-content-wrapper">
+                <div class="car-hero-icon"><i class="fas fa-car"></i></div>
+                <h1>Car Services</h1>
+                <div class="subtitle">Expert care and premium solutions for your car</div>
+                <div class="premium-cards">
+                    <div class="premium-card"><i class="fas fa-broom"></i><h2>Interior Cleaning</h2><div>Deep cleaning for a fresh, hygienic cabin</div></div>
+                    <div class="premium-card"><i class="fas fa-oil-can"></i><h2>Oil Change</h2><div>Engine oil change for smooth performance</div></div>
+                    <div class="premium-card"><i class="fas fa-car-side"></i><h2>Exterior Grooming</h2><div>Shine and protect your car’s exterior</div></div>
+                </div>
+            </div>
+        </section>
+        <section class="services-section car-services-section" data-aos="fade-up">
             <div id="category-view">
-                <div class="services-grid">
-                    <div class="service-card category-card" data-category="internal">
-                        <h3><i class="fas fa-car-seat"></i> Internal Services</h3>
+                <div class="services-grid category-grid">
+                    <div class="category-card car-category-card" data-category="internal">
+                        <div class="category-icon"><i class="fas fa-car-seat"></i></div>
+                        <h3>Internal Services</h3>
                         <p>All internal cleaning and comfort services for your car.</p>
                     </div>
-                    <div class="service-card category-card" data-category="external">
-                        <h3><i class="fas fa-car-side"></i> External Services</h3>
+                    <div class="category-card car-category-card" data-category="external">
+                        <div class="category-icon"><i class="fas fa-car-side"></i></div>
+                        <h3>External Services</h3>
                         <p>External maintenance and grooming for your car.</p>
                     </div>
                 </div>
             </div>
-            <div id="internal-services-view" style="display:none;">
+            <div id="internal-services-view">
                 <button class="back-btn" id="back-to-categories-1">&larr; Back</button>
-                <h2>Internal Services</h2>
-                <div class="services-grid">
-                    <div class="service-card" data-service="Cleaning">
+                <h2><i class="fas fa-car-seat"></i> Internal Services</h2>
+                <div class="services-grid car-service-grid">
+                    <div class="service-card car-service-card" data-service="Cleaning">
+                        <div class="service-icon"><i class="fas fa-broom"></i></div>
                         <h3>Cleaning</h3>
                         <p>Comprehensive interior cleaning for a fresh cabin.</p>
                         <div class="service-meta">
@@ -52,7 +67,8 @@
                         </div>
                         <button class="book-btn" data-service="Cleaning">🔧 Book Now</button>
                     </div>
-                    <div class="service-card" data-service="Leather Seats">
+                    <div class="service-card car-service-card" data-service="Leather Seats">
+                        <div class="service-icon"><i class="fas fa-couch"></i></div>
                         <h3>Leather Seats</h3>
                         <p>Leather seat cleaning and conditioning for luxury feel.</p>
                         <div class="service-meta">
@@ -60,7 +76,8 @@
                         </div>
                         <button class="book-btn" data-service="Leather Seats">🔧 Book Now</button>
                     </div>
-                    <div class="service-card" data-service="Lighting">
+                    <div class="service-card car-service-card" data-service="Lighting">
+                        <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
                         <h3>Lighting</h3>
                         <p>Interior and exterior lighting check and replacement.</p>
                         <div class="service-meta">
@@ -68,7 +85,8 @@
                         </div>
                         <button class="book-btn" data-service="Lighting">🔧 Book Now</button>
                     </div>
-                    <div class="service-card" data-service="Others (Internal)">
+                    <div class="service-card car-service-card" data-service="Others (Internal)">
+                        <div class="service-icon"><i class="fas fa-ellipsis-h"></i></div>
                         <h3>Others</h3>
                         <p>Other internal services as required.</p>
                         <div class="service-meta">
@@ -78,11 +96,12 @@
                     </div>
                 </div>
             </div>
-            <div id="external-services-view" style="display:none;">
+            <div id="external-services-view">
                 <button class="back-btn" id="back-to-categories-2">&larr; Back</button>
-                <h2>External Services</h2>
-                <div class="services-grid">
-                    <div class="service-card" data-service="Oil Change">
+                <h2><i class="fas fa-car-side"></i> External Services</h2>
+                <div class="services-grid car-service-grid">
+                    <div class="service-card car-service-card" data-service="Oil Change">
+                        <div class="service-icon"><i class="fas fa-oil-can"></i></div>
                         <h3>Oil Change</h3>
                         <p>Engine oil change for smooth and efficient performance.</p>
                         <div class="service-meta">
@@ -90,7 +109,8 @@
                         </div>
                         <button class="book-btn" data-service="Oil Change">🔧 Book Now</button>
                     </div>
-                    <div class="service-card" data-service="Engine Grooming">
+                    <div class="service-card car-service-card" data-service="Engine Grooming">
+                        <div class="service-icon"><i class="fas fa-brush"></i></div>
                         <h3>Engine Grooming</h3>
                         <p>Detailed engine cleaning and grooming service.</p>
                         <div class="service-meta">
@@ -98,7 +118,8 @@
                         </div>
                         <button class="book-btn" data-service="Engine Grooming">🔧 Book Now</button>
                     </div>
-                    <div class="service-card" data-service="Garage">
+                    <div class="service-card car-service-card" data-service="Garage">
+                        <div class="service-icon"><i class="fas fa-warehouse"></i></div>
                         <h3>Garage</h3>
                         <p>General garage services for all car needs.</p>
                         <div class="service-meta">
@@ -106,7 +127,8 @@
                         </div>
                         <button class="book-btn" data-service="Garage">🔧 Book Now</button>
                     </div>
-                    <div class="service-card" data-service="Others (External)">
+                    <div class="service-card car-service-card" data-service="Others (External)">
+                        <div class="service-icon"><i class="fas fa-ellipsis-h"></i></div>
                         <h3>Others</h3>
                         <p>Other external services as required.</p>
                         <div class="service-meta">
@@ -117,6 +139,29 @@
                 </div>
             </div>
         </section>
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" data-aos="fade-up">
+            <h2>What Our Car Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>“My car looks and feels brand new after the interior cleaning. Highly recommended!”</p>
+                    <div class="testimonial-user"><i class="fas fa-user-circle"></i> Ramesh K.</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>“Professional oil change and quick service. Will come back for sure.”</p>
+                    <div class="testimonial-user"><i class="fas fa-user-circle"></i> Priya S.</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>“The exterior grooming made my car shine like never before. Great job!”</p>
+                    <div class="testimonial-user"><i class="fas fa-user-circle"></i> Arjun M.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp and Scroll-to-Top Buttons -->
+        <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <button id="scrollTopBtn" title="Go to top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
         <div id="booking-modal" class="modal">
             <div class="modal-content">
                 <span class="close-modal">&times;</span>
@@ -154,9 +199,9 @@
                 <span><i class="fas fa-envelope"></i> info@motogear.com</span>
             </div>
             <div class="footer-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="footer-bottom">&copy; 2024 MotoGear (UV Wash). All rights reserved.</div>
@@ -166,17 +211,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script>
-    // Category switching logic
+    // Robust category switching logic with document-level event delegation
     document.addEventListener('DOMContentLoaded', function () {
-        const categoryCards = document.querySelectorAll('.category-card');
         const categoryView = document.getElementById('category-view');
         const internalView = document.getElementById('internal-services-view');
         const externalView = document.getElementById('external-services-view');
-        const back1 = document.getElementById('back-to-categories-1');
-        const back2 = document.getElementById('back-to-categories-2');
 
-        categoryCards.forEach(card => {
-            card.addEventListener('click', function () {
+        // Category card click
+        categoryView.addEventListener('click', function(e) {
+            const card = e.target.closest('.category-card');
+            if (card) {
                 if (card.dataset.category === 'internal') {
                     categoryView.style.display = 'none';
                     internalView.style.display = 'block';
@@ -184,15 +228,18 @@
                     categoryView.style.display = 'none';
                     externalView.style.display = 'block';
                 }
-            });
+            }
         });
-        back1.addEventListener('click', function () {
-            internalView.style.display = 'none';
-            categoryView.style.display = 'block';
-        });
-        back2.addEventListener('click', function () {
-            externalView.style.display = 'none';
-            categoryView.style.display = 'block';
+
+        // Document-level event delegation for all back buttons
+        document.addEventListener('click', function(e) {
+            if (e.target && e.target.id === 'back-to-categories-1') {
+                internalView.style.display = 'none';
+                categoryView.style.display = 'block';
+            } else if (e.target && e.target.id === 'back-to-categories-2') {
+                externalView.style.display = 'none';
+                categoryView.style.display = 'block';
+            }
         });
     });
     </script>
